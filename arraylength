@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+	char ch[100];
+	int i,j,temp,len;
+	gets(ch);
+	for(i=0;ch[i]!='\0';i++);
+	//printf("%d",i);
+	len=i;
+	j=len-1;
+	for(i=0,j=len-1;i<j;i++,j--)
+	{
+		temp=ch[i];
+		ch[i]=ch[j];
+		ch[j]=temp;
+	
+		
+	}
+	printf("%s",ch);
+}
